@@ -92,7 +92,7 @@ space[row][column] = '0';
 token = 'x';
 }
 else{cout<<"there is no empty space left /n"<<endl;
-}
+ 
 
 }
 bool functionthree(){
@@ -112,9 +112,9 @@ if(space[0][0]==space[1][1] && space[0][0]==space[2][2] || space[0][2]==space[1]
         for(int j=0;j<3; j++){
             if (space[i][j] != 'x' || space[i][j] != '0'){
                 return false;}
-           // else {cout <<" it is a draw \n";}
-           else if (cout<<"there is no empty space left /n"){
-                    return true;}
+                else {tie= true;
+                return true;}
+
         }
    }
 }
@@ -145,13 +145,9 @@ if (token == 'x' && tie== false){
 else if (token == '0' && tie== false)
 { functionONE();
     cout<<n1<<" wins!!"<<endl;
-    cout<<n1<<" wins!!"<<endl;
-}//}
-//else{
-  //  functionONE();
 
-    //cout<<"it is  a draw"<<endl;
-//}
 }
-
-
+else if (tie == true){
+    cout<<"it is a draw";
+}
+}
